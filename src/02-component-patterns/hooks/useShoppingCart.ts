@@ -12,11 +12,9 @@ export const useShoppingCart = () => {
         setShoppingCart( oldShoppingCart => {
                             
             if ( count === 0 ) {
-                    delete oldShoppingCart[ product.id ]
-                    // const { [ product.id ]: toDelete, ...rest  } = oldShoppingCart;
+                    const { [ product.id ]: toDelete, ...rest  } = oldShoppingCart;
                 return {
-                    ...oldShoppingCart
-                    // ...rest
+                    ...rest
                 }
             }
 
