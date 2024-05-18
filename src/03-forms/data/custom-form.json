@@ -1,0 +1,65 @@
+[
+    {
+        "type": "input",
+        "name": "firstName",
+        "placeholder": "John",
+        "label": "First Name",
+        "value": "",
+        "validations": [
+            {
+                "type": "required"
+            },
+            {
+                "type": "minLength",
+                "value": ""
+            }
+        ]
+    },
+    {
+        "type": "input",
+        "name": "lastName",
+        "placeholder": "Doe",
+        "label": "Last Name",
+        "value": "",
+        "validations": [
+            {
+                "type": "required"
+            }
+        ]
+    },
+    {
+        "type": "email",
+        "name": "email",
+        "placeholder": "john@doe.com",
+        "label": "Email",
+        "value": "",
+        "validations": [
+            {
+                "type": "required"
+            },
+            {
+                "type": "email"
+            }
+        ]
+    },
+    {
+        "type": "select",
+        "name": "favoriteGame",
+        "label": "Favorite Game",
+        "value": "",
+        "options": [
+            {
+                "id": "super-smash",
+                "label": "Super Smash"
+            },
+            {
+                "id": "metal-gear",
+                "label": "Metal Gear"
+            },
+            {
+                "id": "resident-evil",
+                "label": "Resident Evil"
+            }
+        ]
+    }
+]
